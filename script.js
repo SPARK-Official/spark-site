@@ -3,15 +3,19 @@ const nav = document.querySelector('.site-nav');
 
 if (navToggle && nav) {
   navToggle.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    const isOpen = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  document.querySelectorAll('.site-nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
-const links = document.querySelectorAll('.site-nav a');
-links.forEach((link) => {
-  link.addEventListener('click', () => {
-    if (nav.classList.contains('open')) {
-      nav.classList.remove('open');
-    }
-  });
-});
+const formNext = document.getElementById('form-next');
+if (formNext) {
+  formNext.value = window.location.href;
+}

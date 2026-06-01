@@ -6,20 +6,20 @@
   <title>SPARK | Art Workshops | Sharing Projects, Art, and Real-world Knowledge</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">SPARK</a>
-      <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <nav class="site-nav">
         <a href="#home">Home</a>
         <a href="#workshops">Workshops</a>
         <a href="#about">Volunteering</a>
         <a href="#gallery">Gallery</a>
-        <a href="#contact">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -47,7 +47,7 @@
         </div>
         <div class="cards-grid">
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1513351008295-0aa09f6b0f90?auto=format&fit=crop&w=1200&q=80" alt="Fine arts workshop" />
+            <img src="https://images.unsplash.com/photo-1513351008295-0aa09f6b0f90?auto=format&fit=crop&w=1200&q=80" alt="Fine arts workshop" loading="lazy" />
             <div class="card-body">
               <h3>Fine Arts</h3>
               <p>Perfect for young artists looking to improve drawing, painting, sculpting, and classic fine art techniques.</p>
@@ -55,7 +55,7 @@
             </div>
           </article>
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1529257414772-1962e9f14f3e?auto=format&fit=crop&w=1200&q=80" alt="Creative arts workshop" />
+            <img src="https://images.unsplash.com/photo-1529257414772-1962e9f14f3e?auto=format&fit=crop&w=1200&q=80" alt="Creative arts workshop" loading="lazy" />
             <div class="card-body">
               <h3>Creative Arts</h3>
               <p>Bring imagination to life through multi-media experiments, playful projects, and collaborative art-making.</p>
@@ -79,7 +79,7 @@
           </ul>
         </div>
         <div class="feature-card">
-          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=80" alt="Art volunteering" />
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=80" alt="Art volunteering" loading="lazy" />
         </div>
       </div>
     </section>
@@ -89,9 +89,9 @@
         <h2>Gallery Preview</h2>
         <p>See examples of past projects and the creative energy from our workshops.</p>
         <div class="gallery-grid">
-          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Art project example" /></div>
-          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Creative art supplies" /></div>
-          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1498079022511-d15614cb1c02?auto=format&fit=crop&w=800&q=80" alt="Group workshop" /></div>
+          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Watercolor painting in progress" loading="lazy" /></div>
+          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=800&q=80" alt="Colorful art supplies" loading="lazy" /></div>
+          <div class="gallery-card"><img src="https://images.unsplash.com/photo-1498079022511-d15614cb1c02?auto=format&fit=crop&w=800&q=80" alt="Group workshop" loading="lazy" /></div>
         </div>
       </div>
     </section>
@@ -109,6 +109,9 @@
           </div>
         </div>
         <form class="contact-form" action="https://formsubmit.co/sparkmcleanhs@gmail.com" method="POST">
+          <input type="hidden" name="_next" id="form-next" />
+          <input type="hidden" name="_subject" value="New message from SPARK website" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <label>
               <span>First Name</span>
@@ -128,7 +131,7 @@
             <textarea name="message" rows="5" placeholder="Leave us a message..." required></textarea>
           </label>
           <label class="checkbox-label">
-            <input type="checkbox" name="subscribe" />
+            <input type="checkbox" name="subscribe" value="yes" />
             Yes, subscribe me to your newsletter.
           </label>
           <button type="submit" class="button button-primary">Submit</button>
