@@ -390,12 +390,12 @@ label span,
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
   width: 200%;
-  max-width: 300;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 .card img {
-  aspect-ratio: 40 / 10;
+  aspect-ratio: 40 / 5;
   object-fit: cover;
 }
 
