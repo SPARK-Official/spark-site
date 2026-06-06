@@ -11,7 +11,7 @@
 
   color: #f6f6f7;
   background: #09080d;
-  --primary: #ff8b1a;
+  --primary: #DF565B;
   --primary-soft: rgba(255, 139, 26, 0.12);
   --text: #f4f4f7;
   --muted: #c1c1c8;
@@ -198,7 +198,7 @@ label span,
   margin: 0;*/
     font-family: 'Cherry Bomb One', system-ui;
     font-size: 4.5rem;
-    color: #ff8b1a;
+    color: #DF565B;
     
     letter-spacing: -0.01em; 
     line-height: 0.8;
@@ -294,7 +294,7 @@ label span,
 }
 
 .button-primary {
-  background: linear-gradient(135deg, #ff8b1a, #ffe07d);
+  background: #DF565B;
   color: #100f12;
   box-shadow: 0 18px 40px rgba(255, 139, 26, 0.22);
 }
@@ -322,6 +322,31 @@ label span,
 .section-header {
   max-width: 720px;
   margin-bottom: 2.5rem;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: none;
+}
+
+.about-copy {
+  flex: 1 1 320px;
+  min-width: 280px;
+  max-width: 55%;
+}
+
+.about-image {
+  flex: 0 0 340px;
+  max-width: 340px;
+  width: 100%;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
 }
 
 .section-label {
@@ -356,8 +381,6 @@ label span,
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.8rem;
   justify-items: center;
-  margin: 0 auto;
-  width: fit-content;
 }
 
 .card {
@@ -366,15 +389,18 @@ label span,
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+  width: 200%;
+  max-width: 300;
+  margin: 0 auto;
 }
 
 .card img {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 40 / 10;
   object-fit: cover;
 }
 
 .card-body {
-  padding: 1.6rem;
+  padding: 2rem;
 }
 
 .card h3 {
@@ -387,7 +413,37 @@ label span,
   margin: 0 0 1.4rem;
 }
 
-.about-grid {
+.card-team {
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.22);
+  width: 80%;
+  max-width: 300;
+  margin: 0 auto;
+}
+
+.card-team img {
+  aspect-ratio: 10 / 8;
+  object-fit: cover;
+}
+
+.card-team {
+  padding: 1rem;
+}
+
+.card-team h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.4rem;
+}
+
+.card-team p {
+  color: var(--muted);
+  margin: 0 0 1.4rem;
+}
+
+.volunteer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
@@ -532,7 +588,7 @@ textarea:focus {
 
 .checkbox-label input {
   width: auto;
-  accent-color: #ff8b1a;
+  accent-color: #DF565B;
 }
 
 .site-footer {
@@ -558,7 +614,7 @@ textarea:focus {
 
 @media (max-width: 900px) {
   .cards-grid,
-  .about-grid,
+  .volunteer-grid,
   .gallery-grid,
   .contact-grid {
     grid-template-columns: 1fr;
