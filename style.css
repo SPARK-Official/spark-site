@@ -4,7 +4,11 @@
 
 :root {
   color-scheme: dark;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: -0.02em; 
+  line-height: 1.1;
+
   color: #f6f6f7;
   background: #09080d;
   --primary: #ff8b1a;
@@ -16,7 +20,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 body {
@@ -63,15 +67,58 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
 }
 
 .brand {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-logo {
+  display: block;
+  max-height: 3rem;
+  width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+label span,
+.section-label,
+.button {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #f6f6f7;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #f6f6f7;
+}
+
+.hero-content h1 {
+  /*font-family: 'ITC Benguiat', serif;
+  font-size: clamp(2.8rem, 5vw, 4.4rem);
+  line-height: 1.02;
+  margin: 0; */
+    font-family: 'Cherry Bomb One', system-ui;
+    letter-spacing: -0.02em;
+    font-weight: 900;
+    font-size: 4.5rem;
+    color: #111;
+    
+    letter-spacing: -0.02em; 
+    line-height: 1.1;
 }
 
 .site-nav {
@@ -137,13 +184,24 @@ textarea {
   letter-spacing: 0.22em;
   color: var(--primary);
   margin-bottom: 1rem;
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  color: #f6f6f7;
 }
 
 .hero-content h1 {
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Impact';
   font-size: clamp(2.8rem, 5vw, 4.4rem);
   line-height: 1.02;
-  margin: 0;
+  margin: 0;*/
+    font-family: 'Cherry Bomb One', system-ui;
+    font-size: 4.5rem;
+    color: #ff8b1a;
+    
+    letter-spacing: -0.01em; 
+    line-height: 0.8;
 }
 
 .hero-text {
