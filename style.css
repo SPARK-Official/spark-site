@@ -12,7 +12,7 @@
   color: #f6f6f7;
   background: #09080d;
   --primary: #DF565B;
-  --primary-soft: rgba(255, 139, 26, 0.12);
+  --primary-soft: #702427;
   --text: #f4f4f7;
   --muted: #c1c1c8;
   --surface: rgba(12, 11, 17, 0.82);
@@ -27,8 +27,8 @@ body {
   margin: 0;
   min-height: 100vh;
   line-height: 1.6;
-  background: radial-gradient(circle at top, rgba(255, 139, 26, 0.16), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(75, 172, 255, 0.16), transparent 24%),
+  background: radial-gradient(circle at top, #000000, transparent 32%),
+    radial-gradient(circle at bottom right, #702427, transparent 24%),
     #09080d;
 }
 
@@ -152,8 +152,9 @@ label span,
   place-items: center;
   padding: 4rem 0;
   position: relative;
-  background-image: linear-gradient(180deg, rgba(7, 7, 12, 0.38), rgba(7, 7, 12, 0.88)),
-    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background-image: linear-gradient(180deg, #FFC5AC, #702427)/*,*/
+    /*url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')*/;
+  backgrond-image:var(--primary)
   background-size: cover;
   background-position: center;
 }
@@ -161,8 +162,8 @@ label span,
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 20%, rgba(255, 139, 26, 0.17), transparent 24%),
-    radial-gradient(circle at 10% 35%, rgba(93, 173, 255, 0.14), transparent 18%);
+  /*background: radial-gradient(circle at 50% 20%, rgba(255, 139, 26, 0.17), transparent 24%),
+    radial-gradient(circle at 10% 35%, rgba(93, 173, 255, 0.14), transparent 18%);*/
 }
 
 .hero-content {
@@ -316,7 +317,7 @@ label span,
 }
 
 .section-alt {
-  background: rgba(255, 255, 255, 0.02);
+  background: #0b090d;
 }
 
 .section-header {
